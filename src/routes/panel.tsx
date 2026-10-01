@@ -18,17 +18,17 @@ import {
 export const Route = createFileRoute("/panel")({
   head: () => ({
     meta: [
-      { title: "Panel del Personal — KALDELUZ" },
+      { title: "Panel del Personal — SADNI" },
       {
         name: "description",
         content:
-          "Panel para gestionar la cola de la sala de espera del centro de salud KALDELUZ: registrar pacientes, llamar el siguiente turno y finalizar atenciones.",
+          "Panel para gestionar la cola de la sala de espera del centro de salud SADNI: registrar pacientes, llamar el siguiente turno y finalizar atenciones.",
       },
-      { property: "og:title", content: "Panel del Personal — KALDELUZ" },
+      { property: "og:title", content: "Panel del Personal — SADNI" },
       {
         property: "og:description",
         content:
-          "Registra pacientes, llama el siguiente turno y finaliza atenciones en la sala de espera de KALDELUZ.",
+          "Registra pacientes, llama el siguiente turno y finaliza atenciones en la sala de espera de SADNI.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -110,7 +110,7 @@ function PanelPersonal() {
                 Panel del Personal
               </p>
               <p className="mt-1 text-xs text-muted-foreground">
-                KALDELUZ · Gestión de turnos
+                SADNI · Gestión de turnos
               </p>
             </div>
           </div>
@@ -308,7 +308,7 @@ function PanelPersonal() {
         </main>
 
         <footer className="mt-6 text-xs text-muted-foreground">
-          KALDELUZ · Panel del Personal — prototipo de sala de espera
+          SADNI · Panel del Personal — prototipo de sala de espera
         </footer>
       </div>
     </div>

@@ -6,17 +6,17 @@ import { fetchTurnos, formatNumero, nombrePublico, type Turno } from "@/lib/turn
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Sala de Espera — KALDELUZ" },
+      { title: "Sala de Espera — SADNI" },
       {
         name: "description",
         content:
-          "Pantalla de turnos en tiempo real de la sala de espera del centro de salud KALDELUZ: turno en atención, próximos pacientes y avisos.",
+          "Pantalla de turnos en tiempo real de la sala de espera del centro de salud SADNI: turno en atención, próximos pacientes y avisos.",
       },
-      { property: "og:title", content: "Sala de Espera — KALDELUZ" },
+      { property: "og:title", content: "Sala de Espera — SADNI" },
       {
         property: "og:description",
         content:
-          "Turno en atención y próximos pacientes del centro de salud KALDELUZ. Los turnos se muestran con nombre e inicial del apellido por privacidad.",
+          "Turno en atención y próximos pacientes del centro de salud SADNI. Los turnos se muestran con nombre e inicial del apellido por privacidad.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -78,7 +78,7 @@ function SalaEspera() {
             </div>
             <div>
               <p className="font-display text-2xl font-bold leading-none tracking-tight text-foreground">
-                KALDELUZ
+                SADNI
               </p>
               <p className="mt-1 text-sm text-muted-foreground">
                 Centro de Salud · Sala de Espera
@@ -248,7 +248,7 @@ function SalaEspera() {
         </main>
 
         <footer className="mt-5 flex items-center justify-between text-xs text-muted-foreground">
-          <span>KALDELUZ · Sala de Espera</span>
+          <span>SADNI · Sala de Espera</span>
           <Link to="/panel" className="font-semibold text-primary hover:underline">
             Panel del personal
           </Link>
