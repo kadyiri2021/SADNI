@@ -123,10 +123,11 @@ export async function llamarSiguiente(): Promise<Turno | null> {
     .order("numero", { ascending: true })
     .limit(1);
   if (!siguiente?.length) return null;
+  const idSiguiente = siguiente[0]!.id;
   const { data: llamado, error } = await supabase
     .from("turnos")
     .update({ estado: "en_atencion", llamado_at: new Date().toISOString() })
-    .eq("id", siguiente[0].id)
+    .eq("id", idSiguiente)
     .select()
     .single();
   if (error) throw error;

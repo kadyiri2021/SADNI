@@ -206,7 +206,7 @@ function PanelPersonal() {
               </div>
               <div className="glass-soft rounded-2xl p-3 text-center">
                 <p className="font-display text-2xl font-bold tabular-nums text-primary">
-                  {turnos.length ? formatNumero(turnos[turnos.length - 1].numero) : "—"}
+                  {turnos.length ? formatNumero(turnos[turnos.length - 1]!.numero) : "—"}
                 </p>
                 <p className="mt-0.5 text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
                   Último turno

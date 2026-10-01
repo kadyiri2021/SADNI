@@ -184,7 +184,7 @@ function SalaEspera() {
                   Próximo turno
                 </p>
                 <p className="mt-1 font-display text-3xl font-bold text-primary tabular-nums">
-                  {proximos.length ? formatNumero(proximos[0].numero) : "—"}
+                  {proximos.length ? formatNumero(proximos[0]!.numero) : "—"}
                 </p>
               </div>
             </div>
