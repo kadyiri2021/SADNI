@@ -14,7 +14,48 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      turnos: {
+        Row: {
+          apellido_inicial: string
+          atendido_at: string | null
+          consultorio: string
+          created_at: string
+          estado: string
+          id: string
+          llamado_at: string | null
+          medico: string | null
+          nombre: string
+          numero: number
+          servicio: string
+        }
+        Insert: {
+          apellido_inicial: string
+          atendido_at?: string | null
+          consultorio?: string
+          created_at?: string
+          estado?: string
+          id?: string
+          llamado_at?: string | null
+          medico?: string | null
+          nombre: string
+          numero: number
+          servicio?: string
+        }
+        Update: {
+          apellido_inicial?: string
+          atendido_at?: string | null
+          consultorio?: string
+          created_at?: string
+          estado?: string
+          id?: string
+          llamado_at?: string | null
+          medico?: string | null
+          nombre?: string
+          numero?: number
+          servicio?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
