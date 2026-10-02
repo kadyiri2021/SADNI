@@ -229,37 +229,30 @@ function SalaEspera() {
           </aside>
 
           {/* Registro con DNI electrónico */}
-          <section className="glass-card col-span-12 flex flex-wrap items-center gap-6 rounded-4xl p-6 lg:gap-10 lg:p-7">
-            <div className="min-w-[20rem] flex-1">
-              <p className="text-xs font-semibold uppercase tracking-wider text-primary">
-                Registro automático
-              </p>
-              <p className="mt-1 font-display text-2xl font-bold text-foreground lg:text-3xl">
-                Acerque su DNI abajo
-              </p>
-              <p className="mt-2 max-w-2xl text-sm text-muted-foreground lg:text-base">
-                Tome su DNI electrónico y páselo por encima del lector que está debajo de esta
-                pantalla, junto a la puerta del consultorio. Su turno se emite solo y aparecerá en
-                pantalla con su nombre e inicial del apellido.
-              </p>
-              <div className="mt-4 flex flex-wrap gap-3">
-                {["Tome su DNI", "Acérquelo al lector", "Espere su turno"].map((paso, i) => (
-                  <span
-                    key={paso}
-                    className="pill-chip inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-sm font-semibold"
-                  >
-                    <span className="grid size-5 place-items-center rounded-full bg-primary text-[0.65rem] font-bold text-primary-foreground">
-                      {i + 1}
-                    </span>
-                    {paso}
+          <section className="glass-card col-span-12 flex flex-col items-center justify-center rounded-4xl p-6 text-center lg:p-8">
+            <p className="text-xs font-semibold uppercase tracking-wider text-primary">
+              Registro automático
+            </p>
+            <p className="mt-1 font-display text-2xl font-bold text-foreground lg:text-3xl">
+              Acerque su DNI abajo
+            </p>
+            <div className="mt-4 flex flex-wrap justify-center gap-3">
+              {["Tome su DNI", "Acérquelo al lector", "Espere su turno"].map((paso, i) => (
+                <span
+                  key={paso}
+                  className="pill-chip inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-sm font-semibold"
+                >
+                  <span className="grid size-5 place-items-center rounded-full bg-primary text-[0.65rem] font-bold text-primary-foreground">
+                    {i + 1}
                   </span>
-                ))}
-              </div>
+                  {paso}
+                </span>
+              ))}
             </div>
             <img
               src={dniNfcIllustration.url}
               alt="Cómo acercar el DNI electrónico al lector NFC"
-              className="h-56 w-auto rounded-2xl lg:h-64"
+              className="mt-5 h-56 w-auto rounded-2xl lg:h-72"
             />
           </section>
         </main>
