@@ -6,3 +6,4 @@
 - [x] Centrar la imagen del DNI en la sección inferior (hecho)
 - [ ] Quitar el párrafo largo de la sección del DNI (en curso)
 - [x] Quitar el párrafo largo de la sección del DNI (hecho)
+- [x] Restaurar datos de demo (062 María R. en atención) (hecho)
