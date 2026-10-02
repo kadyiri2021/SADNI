@@ -15,18 +15,6 @@ import {
   SERVICIOS,
   type NuevoTurnoInput,
 } from "@/lib/turnos";
-  addTurno,
-  fetchTurnos,
-  finalizarTurno,
-  formatNumero,
-  llamarSiguiente,
-  medicoPara,
-  nombrePublico,
-  quitarTurno,
-  reiniciarDemo,
-  SERVICIOS,
-  type NuevoTurnoInput,
-} from "@/lib/turnos";
 
 export const Route = createFileRoute("/panel")({
   head: () => ({
