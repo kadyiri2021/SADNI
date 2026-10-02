@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useQuery } from "@tanstack/react-query";
 import sadniMark from "@/assets/sadni-mark.png";
-import dniNfcIllustration from "@/assets/dni-nfc2.png.asset.json";
+import dniNfcIllustration from "@/assets/dni-nfc-transparent.png.asset.json";
 import { fetchTurnos, formatNumero, nombrePublico, type Turno } from "@/lib/turnos";
 
 export const Route = createFileRoute("/")({
@@ -252,7 +252,7 @@ function SalaEspera() {
             <img
               src={dniNfcIllustration.url}
               alt="Cómo acercar el DNI electrónico al lector NFC"
-              className="mt-5 h-56 w-auto rounded-2xl lg:h-72"
+              className="mt-5 h-56 w-auto lg:h-72"
             />
           </section>
         </main>
