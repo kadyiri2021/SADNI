@@ -106,14 +106,18 @@ function SalaEspera() {
         </header>
 
         {/* Especialidad y consultorio */}
-        <section className="glass-card col-span-12 flex flex-col items-center justify-center gap-1 rounded-4xl px-8 py-6 text-center">
-          <p className="text-xs font-semibold uppercase tracking-wider text-primary">
-            Especialidad
-          </p>
-          <h1 className="font-display text-5xl font-bold leading-none tracking-tight text-foreground lg:text-6xl">
-            Consulta General
-          </h1>
-          <p className="mt-2 inline-flex items-center gap-2 rounded-full bg-primary/10 px-5 py-1.5 font-display text-xl font-bold text-primary">
+        <section className="glass-card col-span-12 flex flex-row items-center justify-between gap-6 rounded-4xl px-8 py-6 lg:px-12">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-wider text-primary">
+              Especialidad
+            </p>
+            <h1 className="mt-1 font-display text-4xl font-bold leading-[0.95] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+              Consulta
+              <br />
+              General
+            </h1>
+          </div>
+          <p className="inline-flex shrink-0 items-center gap-2 rounded-full bg-primary/10 px-6 py-3 font-display text-xl font-bold text-primary lg:text-2xl">
             Consultorio 3
           </p>
         </section>
