@@ -105,6 +105,19 @@ function SalaEspera() {
           </div>
         </header>
 
+        {/* Especialidad y consultorio */}
+        <section className="glass-card col-span-12 flex flex-col items-center justify-center gap-1 rounded-4xl px-8 py-6 text-center">
+          <p className="text-xs font-semibold uppercase tracking-wider text-primary">
+            Especialidad
+          </p>
+          <h1 className="font-display text-5xl font-bold leading-none tracking-tight text-foreground lg:text-6xl">
+            Consulta General
+          </h1>
+          <p className="mt-2 inline-flex items-center gap-2 rounded-full bg-primary/10 px-5 py-1.5 font-display text-xl font-bold text-primary">
+            Consultorio 3
+          </p>
+        </section>
+
         {/* Principal */}
         <main className="mt-6 grid flex-1 grid-cols-12 gap-5">
           {/* Turno en atención */}
