@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useQuery } from "@tanstack/react-query";
 import sadniMark from "@/assets/sadni-mark.png";
+import dniNfcIllustration from "@/assets/dni-nfc.png.asset.json";
 import { fetchTurnos, formatNumero, nombrePublico, type Turno } from "@/lib/turnos";
 
 export const Route = createFileRoute("/")({
@@ -227,24 +228,26 @@ function SalaEspera() {
             </ul>
           </aside>
 
-          {/* Aviso */}
+          {/* Registro con DNI electrónico */}
           <section className="glass-card col-span-12 flex flex-wrap items-center gap-6 rounded-4xl p-6 lg:p-7">
-            <div className="grid size-14 shrink-0 place-items-center rounded-2xl bg-accent/15 text-2xl font-bold text-accent">
-              i
-            </div>
-            <div className="min-w-[16rem] flex-1">
-              <p className="text-xs font-semibold uppercase tracking-wider text-accent">
-                Aviso de asesoría
+            <div className="min-w-[18rem] flex-1">
+              <p className="text-xs font-semibold uppercase tracking-wider text-primary">
+                Registro automático
               </p>
-              <p className="mt-1 text-base text-foreground lg:text-lg">
-                Lleve su documento de identidad y comprobante de seguro. Los turnos se llaman por
-                nombre e inicial del apellido por privacidad.
+              <p className="mt-1 font-display text-2xl font-bold text-foreground lg:text-3xl">
+                Acerque su DNI abajo
+              </p>
+              <p className="mt-2 text-sm text-muted-foreground lg:text-base">
+                Tome su DNI electrónico y páselo por encima del lector que está debajo de esta
+                pantalla, junto a la puerta del consultorio. Su turno se emite solo y aparecerá en
+                pantalla con su nombre e inicial del apellido.
               </p>
             </div>
-            <div className="pill-chip shrink-0 rounded-2xl px-5 py-3 text-center">
-              <p className="font-display text-2xl font-bold">Línea 0800</p>
-              <p className="text-xs text-muted-foreground">Asesoría 24/7</p>
-            </div>
+            <img
+              src={dniNfcIllustration.url}
+              alt="Cómo acercar el DNI electrónico al lector NFC"
+              className="h-44 w-auto rounded-2xl lg:h-52"
+            />
           </section>
         </main>
 
