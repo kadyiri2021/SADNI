@@ -1,7 +1,20 @@
 import { useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import sadniMark from "@/assets/sadni-mark.png";
 import {
+  addTurno,
+  fetchTurnos,
+  finalizarTurno,
+  formatNumero,
+  llamarSiguiente,
+  medicoPara,
+  nombrePublico,
+  quitarTurno,
+  reiniciarDemo,
+  SERVICIOS,
+  type NuevoTurnoInput,
+} from "@/lib/turnos";
   addTurno,
   fetchTurnos,
   finalizarTurno,
@@ -102,8 +115,8 @@ function PanelPersonal() {
       <div className="relative z-10 mx-auto max-w-6xl px-6 py-8">
         <header className="flex flex-wrap items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <div className="glass-card grid size-11 place-items-center rounded-2xl">
-              <span className="font-display text-lg font-bold text-primary">K</span>
+            <div className="glass-card grid size-11 place-items-center rounded-2xl p-1.5">
+              <img src={sadniMark} alt="Logo SADNI" className="size-full object-contain" />
             </div>
             <div>
               <p className="font-display text-lg font-bold leading-none tracking-tight text-foreground">
