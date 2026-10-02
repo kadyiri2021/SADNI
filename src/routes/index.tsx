@@ -138,10 +138,6 @@ function SalaEspera() {
                       <p className="font-display text-3xl font-bold leading-none text-foreground lg:text-4xl">
                         {nombrePublico(enAtencion)}
                       </p>
-                      <p className="mt-2 text-sm text-muted-foreground">
-                        {enAtencion.servicio}
-                        {enAtencion.medico ? ` · ${enAtencion.medico}` : ""}
-                      </p>
                     </div>
                   </div>
                   {enAtencion.llamado_at && (
@@ -216,7 +212,6 @@ function SalaEspera() {
                   <div className="h-8 w-px bg-border" />
                   <div className="flex-1">
                     <p className="font-semibold text-foreground">{nombrePublico(t)}</p>
-                    <p className="text-xs text-muted-foreground">{t.servicio}</p>
                   </div>
                 </li>
               ))}
