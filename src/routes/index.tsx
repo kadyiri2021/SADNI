@@ -236,11 +236,6 @@ function SalaEspera() {
             <p className="mt-1 font-display text-2xl font-bold text-foreground lg:text-3xl">
               Acerque su DNI abajo
             </p>
-            <p className="mt-2 max-w-2xl text-sm text-muted-foreground lg:text-base">
-              Tome su DNI electrónico y páselo por encima del lector que está debajo de esta
-              pantalla, junto a la puerta del consultorio. Su turno se emite solo y aparecerá en
-              pantalla con su nombre e inicial del apellido.
-            </p>
             <div className="mt-4 flex flex-wrap justify-center gap-3">
               {["Tome su DNI", "Acérquelo al lector", "Espere su turno"].map((paso, i) => (
                 <span
