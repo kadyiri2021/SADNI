@@ -229,7 +229,7 @@ function SalaEspera() {
           </aside>
 
           {/* Registro con DNI electrónico */}
-          <section className="glass-card col-span-12 flex flex-col items-center rounded-4xl p-6 text-center lg:p-8">
+          <section className="glass-card col-span-12 flex flex-col items-center justify-center rounded-4xl p-6 text-center lg:p-8">
             <p className="text-xs font-semibold uppercase tracking-wider text-primary">
               Registro automático
             </p>
