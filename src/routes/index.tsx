@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useQuery } from "@tanstack/react-query";
+import sadniMark from "@/assets/sadni-mark.png";
 import { fetchTurnos, formatNumero, nombrePublico, type Turno } from "@/lib/turnos";
 
 export const Route = createFileRoute("/")({
@@ -73,8 +74,8 @@ function SalaEspera() {
         {/* Encabezado */}
         <header className="flex items-center justify-between gap-4">
           <div className="flex items-center gap-4">
-            <div className="glass-card grid size-14 place-items-center rounded-2xl">
-              <span className="font-display text-2xl font-bold text-primary">K</span>
+            <div className="glass-card grid size-14 place-items-center rounded-2xl p-1.5">
+              <img src={sadniMark} alt="Logo SADNI" className="size-full object-contain" />
             </div>
             <div>
               <p className="font-display text-2xl font-bold leading-none tracking-tight text-foreground">
